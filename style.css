@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #e8f0f7 0%, #d0dce5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.keyboard-frame {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Keyboard Rows */
+.keyboard-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* Key Styles */
+.key {
+  padding: 16px 14px;
+  min-width: 45px;
+  background: linear-gradient(to bottom, #fdfdfd 0%, #e4e8ec 100%);
+  border: 1px solid #aab4be;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 4px 0 #c2cbd6,
+    0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.15s ease-in-out;
+}
+
+.key:active {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  transform: translateY(3px);
+}
+
+/* Key Size Variants */
+.wide {
+  min-width: 70px;
+}
+
+.xwide {
+  min-width: 100px;
+}
+
+.xxwide {
+  min-width: 130px;
+}
+
+.spacebar {
+  min-width: 300px;
+}
+
+.spacer {
+  flex: 0.5;
+}
