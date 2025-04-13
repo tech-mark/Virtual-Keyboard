@@ -18,14 +18,12 @@ body {
   gap: 10px;
 }
 
-/* Keyboard Rows */
 .keyboard-row {
   display: flex;
   gap: 8px;
   justify-content: center;
 }
 
-/* Key Styles */
 .key {
   padding: 16px 14px;
   min-width: 45px;
@@ -47,7 +45,6 @@ body {
   transform: translateY(3px);
 }
 
-/* Key Size Variants */
 .wide {
   min-width: 70px;
 }
